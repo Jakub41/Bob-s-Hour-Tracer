@@ -1,0 +1,38 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+tr.second th {
+    padding: 8px;
+    border: 2px solid #CCC;
+}
+
+tr.rows td {
+    padding: 8px;
+    border: 1px solid #CCC;
+}
+
+tr.border_bottom th{
+border-bottom: 1px solid #CCC;
+padding-bottom: 5px;
+}
+
+tr.border td{
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 1px solid #CCC;
+}
+
+.success,
+.error{
+  display: none;
+}
