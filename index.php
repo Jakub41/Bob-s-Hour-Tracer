@@ -36,6 +36,11 @@ include 'app/indexModel.php';// include index model
         <div class=col-lg-12 text-center>
           <?php
                 echo '<h4>'.$Totaltime.'</h4>';
+                if (count($data)) { //check if there's a project
+                    echo '<h5>Total Projects:</h5> '.count($data);
+                  }else{
+                    echo '<h5>Total Projects: 0</h5>';
+                  }
           ?>
             <div class="table-responsive">
               <center>
@@ -62,11 +67,12 @@ include 'app/indexModel.php';// include index model
                   </tr>
                   <?php
                             if (count($data)) { //check if there's a project
-                                echo 'Total Projects: '.count($data);
+                                // echo 'Total Projects: '.count($data);
+
 
                                 if (isset($data)) { //check if there's a project
-                                foreach ($data as $key => $val) {
-                    ?>
+                                  foreach ($data as $key => $val) {
+                  ?>
 
                     <tr class="border" id="<?php echo $val['id']; ?>">
                       <td style="width: 20%;padding-right:20px; vertical-align: middle;">
@@ -99,7 +105,6 @@ include 'app/indexModel.php';// include index model
                         </td>
                     </tr>
                     <?php
-
                                 }
                             } else { // if no display no projects found
                                 echo '<tr id="noproject">
