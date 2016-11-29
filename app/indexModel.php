@@ -38,4 +38,4 @@
     $time_closed = $temp[0];
 
     $Totaltime = '<br>Time Spent on Open projects: '.(($time_open) ? $time_open : '0 hours').
-                 '<br>Time Spent on Closed projects: '.(($time_closed) ? $time_closed : '0 hours');
+                 '<br>Time Spent on Closed projects: '.(($time_closed) ? $time_closed : '0 hours').'<br><br>';
